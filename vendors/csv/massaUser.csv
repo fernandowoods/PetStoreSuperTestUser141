@@ -1,4 +1,4 @@
-userId, username, firstName, lastName, email,  password, phone, userStatus
+id, username, firstName, lastName, email,  password, phone, userStatus
 173312202, zezinho, ze, zinho, zezinho@gmail.com, zezinho123, 21912345678, 1
 173312203, beltrano, beltrano, silva, beltranosilva@gmail.com, beltrano123, 21987654321, 1
 173312204, feliciano, feliciano, sousa, felicianoadmin@gmail.com, feliciano123, 21999990000, 2
