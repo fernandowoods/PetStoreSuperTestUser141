@@ -88,8 +88,8 @@ describe('PetStore Swagger - User', () =>{
     })
     massa1.array.forEach(({ id, username, firstName, lastName, email, password, phone, userStatus }) => {
         massa1.id = id        // para substituir o nome que está no json
-            it('POST User', () =>{
-                return request
+        it(`POST User Data Driven forEach - ${username}`, () => {
+                 return request
                     .post('/user')            // endpoint
                     .send(user)               // enviar json do user
                     .then((res) => {          // o ponto no início significa que é uma continuação do request
@@ -98,9 +98,7 @@ describe('PetStore Swagger - User', () =>{
                         expect(res.body.type).toBe('unknown')
                         expect(res.body.code).toBe(200)
                     })
-            })
-
-    })
+        })
 
         it(`GET User Data Driven forEach - ${username}`, () => {
             return request
@@ -140,4 +138,5 @@ describe('PetStore Swagger - User', () =>{
                     expect(res.body.code).toBe(200)
                 })
         })
+    })
 })
